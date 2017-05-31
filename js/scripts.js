@@ -32,4 +32,15 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+  $("button#salad").click(function() {
+    $("ul#user").prepend("<li>lettuce</li>");
+    $("ul#user").children("li").first().click(function() {
+      $(this).remove();
+    });
+    $("ul#webpage").prepend("<li>Tomato</li>");
+    $("ul#webpage").children("li").first().click(function() {
+      $(this).remove();
+    });
+  });
 });
