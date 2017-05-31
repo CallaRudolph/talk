@@ -43,4 +43,11 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+  $("h1").click(function() {
+    $("body").addClass("green-background");
+    $("body").removeClass("white-background");
+  });
+  $("p").click(function() {
+    $("body").addClass("white-background");
+  });
 });
